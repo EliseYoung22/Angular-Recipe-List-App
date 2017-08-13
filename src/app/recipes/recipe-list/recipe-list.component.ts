@@ -12,7 +12,6 @@ export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
     new Recipe('A test recipe', 'test desc', 'http://res.cloudinary.com/devsvbpxr/image/upload/v1494051423/bowl_a27g7s.png'),
     new Recipe('Another test recipe', 'test desc', 'http://res.cloudinary.com/devsvbpxr/image/upload/v1494051423/bowl_a27g7s.png')
-
   ];
 
   constructor() { }
@@ -22,7 +21,7 @@ export class RecipeListComponent implements OnInit {
 
   onRecipeSelected(recipe: Recipe) {
     this.recipeWasSelected.emit(recipe);
-    console.log(recipe)
+    console.log(recipe);
   }
 
 }
